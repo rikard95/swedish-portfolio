@@ -5,7 +5,6 @@ interface GithubProjekt {
   namn: string;
   beskrivning: string;
   githubUrl: string;
-  demoUrl?: string;
   sprak: string;
 }
 
@@ -21,28 +20,24 @@ export class Projekt {
       namn: 'E-commerce Project',
       beskrivning: 'En e-handelssida byggd med TypeScript och React.',
       githubUrl: 'https://github.com/rikard95/ecommerce-project',
-      demoUrl: 'https://rikard95.github.io/ecommerce-project/',
       sprak: 'TypeScript',
     },
     {
       namn: 'Stor och Liten',
       beskrivning: 'En interaktiv React-applikation byggd med TypeScript.',
       githubUrl: 'https://github.com/rikard95/stor-och-liten',
-      demoUrl: 'https://rikard95.github.io/stor-och-liten/',
       sprak: 'TypeScript',
     },
     {
       namn: 'CoachCal',
       beskrivning: 'En kalenderapp för coacher byggd med React och TypeScript.',
       githubUrl: 'https://github.com/rikard95/CoachCal',
-      demoUrl: 'https://rikard95.github.io/CoachCal/',
       sprak: 'TypeScript',
     },
     {
       namn: 'Konditori – Kunskapskontroll',
       beskrivning: 'En konditorisida byggd med HTML och CSS.',
       githubUrl: 'https://github.com/rikard95/kunskapskontroll-1',
-      demoUrl: 'https://rikard95.github.io/kunskapskontroll-1/',
       sprak: 'HTML',
     },
     {
