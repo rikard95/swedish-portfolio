@@ -5,6 +5,7 @@ interface GithubProjekt {
   namn: string;
   beskrivning: string;
   githubUrl: string;
+  demoUrl?: string;
   sprak: string;
 }
 
@@ -32,6 +33,7 @@ export class Projekt {
       namn: 'CoachCal',
       beskrivning: 'En kalenderapp för coacher byggd med React och TypeScript.',
       githubUrl: 'https://github.com/rikard95/CoachCal',
+      demoUrl: 'https://coachcaldb.web.app/',
       sprak: 'TypeScript',
     },
     {
