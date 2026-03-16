@@ -1,5 +1,6 @@
 <!-- Projects Navigation Grid -->
-<div class="max-w-[900px] w-[90%] mx-auto mt-12 mb-12">
+<div class="max-w-[900px] w-[90%] mx-auto mt-12 mb-4">
+  <h2 class="text-xl sm:text-2xl font-bold text-slate-100 mb-4">Verktyg</h2>
   <div class="grid grid-cols-2 sm:grid-cols-3 gap-3 sm:gap-4">
     
     <a 
@@ -72,5 +73,31 @@
       </div>
     </a>
     
+  </div>
+</div>
+
+<!-- GitHub Repositories Section -->
+<div class="max-w-[900px] w-[90%] mx-auto mt-10 mb-12">
+  <h2 class="text-xl sm:text-2xl font-bold text-slate-100 mb-4">Mina GitHub-projekt</h2>
+  <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
+    @for (projekt of githubProjekter; track projekt.url) {
+      <a
+        [href]="projekt.url"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="group bg-slate-800/50 dark:bg-slate-800/50 backdrop-blur-sm border border-slate-700 dark:border-slate-700 rounded-xl p-4 sm:p-6 transition-all hover:border-blue-500 dark:hover:border-blue-500 hover:shadow-glow no-underline flex flex-col gap-2"
+      >
+        <div class="text-base sm:text-lg font-semibold text-slate-100 dark:text-slate-100 group-hover:text-blue-400 dark:group-hover:text-blue-400 transition-colors">
+          {{ projekt.namn }}
+        </div>
+        <div class="text-sm text-slate-400 dark:text-slate-400 leading-snug">
+          {{ projekt.beskrivning }}
+        </div>
+        <div class="mt-auto pt-2 flex items-center gap-1 text-xs text-slate-500 dark:text-slate-500">
+          <span class="inline-block w-2 h-2 rounded-full bg-blue-400"></span>
+          {{ projekt.sprak }}
+        </div>
+      </a>
+    }
   </div>
 </div>
