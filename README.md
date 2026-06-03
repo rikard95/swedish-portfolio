@@ -1,5 +1,7 @@
 # Text
 Swedish portfolio
+<img width="1882" height="876" alt="image" src="https://github.com/user-attachments/assets/dc23fafd-d518-499b-9bd4-2354dea9ee05" />
+
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.3.3.
 
